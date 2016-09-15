@@ -1,0 +1,15 @@
+{
+	"ignore": [
+		".Modal.is-displayed .Modal-content",
+		".Form-group.is-active > label:not(.error)",
+		".affix",
+		".affix-bottom",
+		".u-hide",
+		".u-marginT0",
+		".u-padding2",
+		".Button.Button--rev",
+		".Footer-contact .Button",
+		".Post--glow",
+        ".c-header cite"
+	]
+}

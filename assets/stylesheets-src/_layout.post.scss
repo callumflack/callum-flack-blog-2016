@@ -1,0 +1,200 @@
+
+
+// --------------------------------------------------------------------------
+//   COMPONENT: BLOG POSTS
+// --------------------------------------------------------------------------
+
+
+// Post block in a list.
+// When a post is also a link.
+// These are vertically & horizontally centered.
+// See: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+// --------------------------------------------------------------------------
+
+//a.Post--inList {
+//	@include complexLink();
+//	@include o-aligner;
+//	border: 0;
+//	margin-bottom: $blockSpace / 3;
+//	position: relative;
+//
+//	+ .Post--inList {
+//		// margin-top: space(3.25);
+//		margin-top: $blockSpace / 2;
+//	}
+//
+//	> .Post-aligner {
+//		@include o-aligner-item;
+//	}
+//
+//	@include on-event() {
+//		.o-coverImage,
+//		.Post-image,
+//		.Post-coverImage {
+//			@include baseTransition();
+//			opacity: 0.5;
+//		}
+//	}
+//}
+
+.Post + .Post {
+    margin-top: $blockSpace;
+}
+
+// markdown scope
+.Post-content {
+
+    figure {
+        margin: ($paragraphSpace * 1.25) 0 ($paragraphSpace * 1.5);
+    }
+
+    blockquote p {
+        background-color: rgba( palette(neutral), 0.7);
+        //border-left: 1px solid palette(text);
+        color: rgba( palette(text), 0.85);
+        letter-spacing: 0.0025em;
+        padding: space(0.6) space(0.75) space(0.5);
+
+        // font sizes
+    	font-size: fontsize(text--quote, sm);
+    	@include media-breakpoint-up(sm) { font-size: fontsize(text--quote, rg); }
+    	@include media-breakpoint-up(lg) { font-size: fontsize(text--quote, lg); }
+
+    }
+}
+
+// When inside .Post-content markdown:
+.Post-date {
+    @include textRg();
+    color: palette(muted);
+    float: left;
+    margin-right: space(0.3);
+}
+
+.Post-image {
+	margin-bottom: space(1);
+}
+
+.Post-meta {
+    @include textTemplate(
+		$mixinSize: text--sm,
+		$mixinColor: palette(muted),
+		$mixinLetterSpacing: 0.025em
+	);
+    border-top: 1px solid palette(base);
+	margin-top: $blockSpace * 1/3;
+	padding-top: space(0.5);
+
+    span {
+        display: inline-block;
+        font-size: 75%;
+        margin: 0 space(0.25);
+        transform: translateY(-3px);
+    }
+}
+
+.Post-tags {
+	@include textSm();
+	color: palette(muted);
+    display: inline-block;
+	//margin-top: space(0.25);
+
+    > a {
+        @include underlineLink($mixin-rule: $linkRuleGrey);
+    }
+}
+
+
+
+
+
+
+.Post-hero {
+	@include headerTextBlock();
+	@include coverImage();
+}
+
+.Post-hero--inverse {
+	@include reverseTextBlock();
+}
+
+.Post-content {
+}
+
+
+
+
+
+
+
+
+// different for blocks
+
+//@keyframes postZoom {
+//	0%   { transform: scale(1); }
+//	100% { transform: scale(1.75); }
+//}
+
+// a.Post {
+// 	@include complexLink();
+// 	@include headerTextBlock();
+// 	background-color: palette(neutral-dark);
+// 	border: 0;
+// 	content: 'viewport-units-buggyfill; padding: calc(5vh);';
+// 	height: inherit;
+// 	overflow: hidden;
+// 	padding: 5vh;
+// 	position: relative;
+//
+// 	&--inverse {
+// 		@include reverseTextBlock();
+// 	}
+//
+// 	@include on-event() {
+// 		.o-coverImage,
+// 		.Post-coverImage {
+// 			// animation: postZoom 80s infinite;
+// 			// opacity: 0.5;
+// 			transform: scale(1.5);
+// 			transition: opacity 1s ease, transform 80s ease;
+// 		}
+// 	}
+// }
+
+
+
+// .Post-coverImage {
+// 	@include o-posFullScreen(absolute);
+// 	transform: scale(1);
+// 	transition: opacity 1s ease, transform 80s ease;
+// }
+//
+// .Post-heroImage {
+//
+// }
+
+
+
+// Project vars
+// These vars are the "indexstyle" field in post._data
+// --------------------------------------------------------------------------
+
+// .Post--phn {
+// 	// @include reverseTextBlock();
+// 	// background-color: palette(project-phn);
+//
+// 	> .Post-coverImage {
+// 		background-position-x: 110%;
+// 		@include media-breakpoint-up(xl) { background-position-x: 70%; }
+// 	}
+// }
+//
+// .Post--ward6 {
+// 	// @include reverseTextBlock();
+// 	background-color: rgba( #014b56, 0.25) !important;
+//
+// 	> .Post-coverImage {
+// 		background-position-x: 110%;
+// 		@include media-breakpoint-up(xl) { background-position-x: 70%; }
+// 	}
+// }

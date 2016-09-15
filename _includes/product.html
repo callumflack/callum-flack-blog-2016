@@ -1,0 +1,24 @@
+<div class="Grid-cell u-sm-size1of2 u-xl-size1of3">
+    <a
+        href="#"
+        class="c-product snipcart-add-item"
+        data-item-name="{{ product.name }}"
+        data-item-id="{{ product.sku }}"
+        data-item-image="{{ product.imageurl }}"
+        data-item-url="{{ product.url | prepend: site.baseurl }}"
+        data-item-price="{{ product.price }}"
+        data-item-weight="{{ product.weight }}"
+        data-item-description="{{ product.description }}"
+        >
+        <img src="{{ site.assetsurl }}{{ product.image }}.jpg" alt="{{ product.name }}" />
+        <div class="c-product-text">
+            <div class="c-product-name">{{ product.name }}</div>
+            <div class="c-product-description">{{ product.description }}</div>
+            <div class="u-flex u-flexRow">
+                <div class="c-product-price">${{ product.price }}</div>
+                <div class="c-product-action u-flexExpandLeft">Add to cart →</div>
+            </div>
+        </div>
+
+    </a>
+</div>

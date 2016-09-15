@@ -1,0 +1,17 @@
+<section class="c-section o-coverImage o-coverImage--blends" style="background-image: url('{{ site.assetsurl }}bg-blends.jpg')">
+    <div class="c-block u-textCenter">
+        <div class="o-container">
+            <h1 class="c-headline">Buy Billy's <span class="u-sm-lineBreak">best blends.</span></h1>
+            <h2 class="c-headline--smSemi u-lg-spaceTD2">Locally sourced. <span class="u-sm-lineBreak">Fresh roasted daily.</span></h2>
+        </div>
+    </div>
+    <div class="c-block c-block--products">
+        <div class="o-container--super">
+            <div class="Grid Grid--withGutter Grid--alignCenter">
+                {% for product in site.products %}
+                    {% include product.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,106 @@
+
+
+// --------------------------------------------------------------------------
+//   HEADLINE TYPOGRAPHY
+// --------------------------------------------------------------------------
+
+
+// Common theme…
+
+@mixin headlineTemplate(
+	$mixinSize: headline,
+	$mixinColor: palette(text),
+	$mixinFont: $font-text-book,
+	$mixinLetterSpacing: -0.015em,
+	$mixinLineHeight: 1.3,
+	$mixinMarginBottom: $blockSpace * 1/3
+) {
+
+	// standards
+	color: $mixinColor;
+	font-family: $mixinFont;
+	letter-spacing: $mixinLetterSpacing;
+	line-height: $mixinLineHeight;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: $mixinMarginBottom;
+	text-align: left;
+
+	// sizes
+	font-size: fontsize($mixinSize, xs);
+	@include media-breakpoint-up(sm) { font-size: fontsize($mixinSize, rg); }
+	@include media-breakpoint-up(lg) { font-size: fontsize($mixinSize, lg); }
+
+	// children
+	> li,
+	> li a,
+	> a {
+		border-bottom: 0;
+		color: currentColor;
+		font-family: inherit;
+		font-size: inherit;
+		margin: 0;
+	}
+}
+
+
+// Component by size…
+
+@mixin display() {
+    @include headlineTemplate(
+    $mixinLetterSpacing: -0.005em,
+    $mixinLineHeight: 1.1,
+    $mixinSize: display
+    );
+
+    @include when-inside(".Footer") {
+        margin-bottom: space(1.25);
+    }
+}
+
+@mixin headline() {
+	@include headlineTemplate(
+		$mixinSize: text--lg
+	);
+}
+
+@mixin headlineSm() {
+    @include headlineTemplate(
+    //$mixinSize: headline--sm,
+    $mixinSize: text--lg,
+    $mixinLetterSpacing: 0.012em
+    );
+}
+
+@mixin headlineXs() {
+    @include headlineTemplate(
+    $mixinSize: headline--xs,
+    $mixinLetterSpacing: 0.012em
+    );
+}
+
+
+
+
+// Component: headline
+// --------------------------------------------------------------------------
+
+.c-display          { @include display(); }
+//.c-headline         { @include headline(); font-family: 'jupiter'; }
+.c-headline         { @include headline(); }
+.c-headline--sm     { @include headlineSm(); }
+.c-headline--smSemi { @include headlineSm(); font-family: $font-text-semibold; }
+.c-headline--xs     { @include headlineXs(); }
+.c-headline--xsSemi { @include headlineXs(); font-family: $font-text-semibold; }
+
+.c-headline em {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+// Component: headline blocks.
+// --------------------------------------------------------------------------
+
+// .Headline-block { > * { @include headline(); } }

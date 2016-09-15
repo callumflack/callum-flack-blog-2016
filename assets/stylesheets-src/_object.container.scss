@@ -1,0 +1,67 @@
+
+
+// --------------------------------------------------------------------------
+//   CONTAINER OBJECT
+// --------------------------------------------------------------------------
+
+
+@mixin container(
+	$width: container-width(rg)
+) {
+	@include clearfix();
+	height: inherit;
+	margin: 0 auto;
+	max-width: $width;
+	padding: 0 space(2);
+	position: relative;
+
+    // manage end spacing
+	p,
+	li,
+	ol {
+		&:last-child,
+		&:last-child a {
+			margin-bottom: 0;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 0;
+	}
+}
+
+.o-container {
+	@include container();
+
+	&--md {
+		@include container( container-width(md) );
+	}
+
+	&--lg {
+		@include container( container-width(lg) );
+	}
+
+	&--xl {
+		@include container( container-width(xl) );
+	}
+
+	&--hero {
+        @include media-breakpoint-up(sm) {
+            padding: 0 space(4);
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 space(2);
+        }
+	}
+
+    &--super {
+        //@include container( container-width(su) );
+		max-width: 100%;
+		padding: 0 space(1.5);
+
+        @include media-breakpoint-up(sm) {
+            padding: 0 space(4);
+        }
+	}
+}
