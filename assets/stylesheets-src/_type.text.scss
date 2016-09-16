@@ -48,7 +48,8 @@
 @mixin textSm() {
 	@include textTemplate(
 		$mixinSize: text--sm,
-		$mixinLetterSpacing: 0.02em
+		$mixinLetterSpacing: 0.02em,
+        $mixinLineHeight: 1.6 
 	);
 }
 

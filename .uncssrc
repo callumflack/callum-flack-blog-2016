@@ -10,6 +10,10 @@
 		".Button.Button--rev",
 		".Footer-contact .Button",
 		".Post--glow",
-        ".c-header cite"
+        ".Post + .Post",
+        "blockquote",
+        ".FlexEmbed-ratio--4by3",
+        ".Post-content figure",
+        ".Post-content blockquote p"
 	]
 }
