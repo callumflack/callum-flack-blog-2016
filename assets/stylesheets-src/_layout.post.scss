@@ -43,6 +43,9 @@
 
 // markdown scope
 .Post-content {
+    a {
+        @include underlineLink($mixin-rule: $linkRuleText);
+    }
 
     figure {
         margin: ($paragraphSpace * 1.25) 0 ($paragraphSpace * 1.5);

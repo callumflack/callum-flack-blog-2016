@@ -8,4 +8,4 @@ tags:
 extract:
 ---
 
-Today I polished yesterday's post. [Boom.](#)
+Today I polished yesterday's post. [Boom.](https://github.com/callumflack/callumflack-blog/commits/8a38485b387fbc77469ad6afa5392b85f030ac17/_posts/2016-09-14-shit-kick.md)

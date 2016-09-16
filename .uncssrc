@@ -13,6 +13,7 @@
         ".Post + .Post",
         "blockquote",
         ".FlexEmbed-ratio--4by3",
+        ".Post-content a",
         ".Post-content figure",
         ".Post-content blockquote p"
 	]
