@@ -5,6 +5,11 @@
 // --------------------------------------------------------------------------
 
 
-body {
-    border-top: rem(6) solid palette(brand);
+html {
+    background-color: palette(brand-complement);
+}
+
+.c-content {
+    background-color: palette(background);
+    padding: $blockSpace 0;
 }

@@ -6,8 +6,8 @@
 
 
 .c-header {
-    background-color: palette(faint);
-    background-color: palette(brand-complement);
+    //background-color: palette(faint);
+    //background-color: palette(brand-complement);
     padding: $blockSpace * 0.5 0;
 	position: relative;
 }
@@ -55,84 +55,58 @@
 
 
 
-.c-section {
-    padding: $blockSpace 0;
-}
-
-.c-block {
-    margin-top: $blockSpace;
-    &:first-of-type { margin: 0; }
-
-}
 
 
-
-
-.c-content {
-    margin: $blockSpace 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.c-block-cell {
-    display: block;
-}
-
-.c-block-cell p {
-    margin: space(1) 0 0;
-    text-align: center;
-}
-
-.c-logo {
-    width: 90px;
-    margin-bottom: space(0.75);
-
-    @include media-breakpoint-up(sm) {
-        width: 130px;
-    }
-}
-
-.c-footer {
-    padding: $blockSpace 0 $blockSpace / 2;
-    //padding: 0 0 $blockSpace / 2;
-}
-
-
-
-
-
-// quick spacers
-
-.u-spaceTD2    { margin-top: space(0.5); }
-.u-spaceT      { margin-top: space(1); }
-.u-spaceT2     { margin-top: space(2); }
-.u-spaceB      { margin-bottom: space(1); }
-.u-spaceB2     { margin-bottom: space(2); }
-
-.u-sm-spaceT   { @include media-breakpoint-down(sm) { margin-top: space(1); } }
-.u-sm-spaceT2  { @include media-breakpoint-down(sm) { margin-top: space(2); } }
-.u-sm-spaceTD2 { @include media-breakpoint-down(sm) { margin-top: space(0.5); } }
-
-.u-lg-spaceT   { @include media-breakpoint-down(lg) { margin-top: space(1); } }
-.u-lg-spaceTD2 { @include media-breakpoint-down(lg) { margin-top: space(0.5); } }
-
-.u-xl-spaceT   { @include media-breakpoint-down(xl) { margin-top: space(1); } }
+//.c-section {
+//    padding: $blockSpace 0;
+//}
+//
+//.c-block {
+//    margin-top: $blockSpace;
+//    &:first-of-type { margin: 0; }
+//
+//}
+//
+//.c-block-cell {
+//    display: block;
+//}
+//
+//.c-block-cell p {
+//    margin: space(1) 0 0;
+//    text-align: center;
+//}
+//
+//.c-logo {
+//    width: 90px;
+//    margin-bottom: space(0.75);
+//
+//    @include media-breakpoint-up(sm) {
+//        width: 130px;
+//    }
+//}
+//
+//.c-footer {
+//    padding: $blockSpace 0 $blockSpace / 2;
+//    //padding: 0 0 $blockSpace / 2;
+//}
+//
+//
+//
+//
+//
+//// quick spacers
+//
+//.u-spaceTD2    { margin-top: space(0.5); }
+//.u-spaceT      { margin-top: space(1); }
+//.u-spaceT2     { margin-top: space(2); }
+//.u-spaceB      { margin-bottom: space(1); }
+//.u-spaceB2     { margin-bottom: space(2); }
+//
+//.u-sm-spaceT   { @include media-breakpoint-down(sm) { margin-top: space(1); } }
+//.u-sm-spaceT2  { @include media-breakpoint-down(sm) { margin-top: space(2); } }
+//.u-sm-spaceTD2 { @include media-breakpoint-down(sm) { margin-top: space(0.5); } }
+//
+//.u-lg-spaceT   { @include media-breakpoint-down(lg) { margin-top: space(1); } }
+//.u-lg-spaceTD2 { @include media-breakpoint-down(lg) { margin-top: space(0.5); } }
+//
+//.u-xl-spaceT   { @include media-breakpoint-down(xl) { margin-top: space(1); } }
