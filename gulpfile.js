@@ -39,12 +39,29 @@ var options = {
 	},
 
 	build : {
-		tasks       : [ 'images', 'compile:sass'],
+		tasks       : [ 'images', 'compile:sass', 'minify:css'],
 		destination : 'build/'
 	},
 
 	production : {
 		tasks : [ 'build', 'minify:css' ]
+	},
+
+	watch : {
+		files : function() {
+			return [
+				options.images.files,
+				options.js.files,
+				options.sass.files
+			]
+		},
+		run : function() {
+			return [
+				[ 'images' ],
+				[ 'minify:js' ],
+				[ 'compile:sass' ]
+			]
+		}
 	},
 
 	css : {
@@ -64,45 +81,22 @@ var options = {
 	},
 
 	images : {
-		files       : 'assets/images-src/*',
+		files       : 'assets/_source/images/*',
 		destination : 'assets/images'
 	},
 
 	js : {
-		// files       : 'assets/scripts/*.js',
 		files : [
-			'node_modules/fontfaceonload/dist/fontfaceonload.js',
-			'assets/javascripts/*.js'
+			// 'node_modules/fontfaceonload/dist/fontfaceonload.js',
+			'assets/_source/javascripts/*.js'
 		],
-		file        : 'assets/javascripts-src/application.js',
+		file        : 'assets/_source/javascripts/application.js',
         destination : 'assets/javascripts'
 	},
 
-	pagespeedindex : {
-		site        : '',
-		key         : ''
-	},
-
 	sass : {
-		files       : 'assets/stylesheets-src/*.scss',
+		files       : 'assets/_source/stylesheets/*.scss',
 		destination : 'assets/stylesheets/'
-	},
-
-	watch : {
-		files : function() {
-			return [
-				options.images.files,
-				options.js.files,
-				options.sass.files
-			]
-		},
-		run : function() {
-			return [
-				[ 'images' ],
-				[ 'minify:js' ],
-				[ 'compile:sass' ]
-			]
-		}
 	}
 }
 
@@ -166,19 +160,12 @@ gulp.task( 'compile:sass', function() {
 		.pipe( plugins.connect.reload() );
 });
 
-// pip order example…
-// gulp.task( 'compile:css', function() {
-//     return gulp
-//         .src(output.css + '/*.css')
-//         .pipe(order([
-//             "vendor.css",
-//             "flickity.css",
-//             "styles.css"
-//         ]))
-//         .pipe(concat('styles.min.css'))
-//         .pipe(cssNano(nanoOptions))
-//         .pipe(gulp.dest(output.css))
-// });
+// pipe order example…
+    // .pipe(order([
+    //     "vendor.css",
+    //     "flickity.css",
+    //     "styles.css"
+    // ]))
 
 gulp.task( 'minify:css', function () {
 	gulp.src( options.css.file )
@@ -210,36 +197,11 @@ gulp.task( 'minify:js', function () {
 
 // Creates SVG sprite and demo page.
 // Alt: https://github.com/Hiswe/gulp-svg-symbols & OUI
-
 gulp.task( 'icons', function() {
 	gulp.src( options.icons.files )
 		.pipe( plugins.svgmin() )
 		.pipe( plugins.svgstore( { inlineSvg: true } ) )
 		.pipe( gulp.dest( options.icons.destination ) );
-});
-
-// PageSpeed tests using the `nokey` option.
-// See: https://github.com/addyosmani/psi-gulp-sample/blob/master/gulpfile.js
-
-gulp.task('psiMobile', function () {
-	return plugins.psi( options.pagespeedindex.site, {
-		// key: key
-		nokey: 'true',
-		strategy: 'mobile',
-	}).then(function (data) {
-		console.log('Speed score: ' + data.ruleGroups.SPEED.score);
-		console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
-	});
-});
-
-gulp.task('psiDesktop', function () {
-	return plugins.psi( options.pagespeedindex.site, {
-		// key: key,
-		nokey: 'true',
-		strategy: 'desktop',
-	}).then(function (data) {
-		console.log('Speed score: ' + data.ruleGroups.SPEED.score);
-	});
 });
 
 gulp.task( 'watch', function() {
