@@ -23,6 +23,7 @@
 		"gulp-uncss": "^1.0.6",
 		"gulp-uglify": "^2.0.0",
 		"psi": "^2.0.4",
+        "run-sequence": "^1.2.2",
 		"viewport-units-buggyfill": "^v0.6.0"
 	},
 	"engines": {
