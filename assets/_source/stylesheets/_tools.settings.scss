@@ -97,9 +97,9 @@ $container-max-widths: (
 
 $fontsizes: (
 	text--sm: (
-		sm            : 14px,
-		rg            : $base-font-size,
-        lg            : 17px
+		sm            : 13px,
+		rg            : 15px,
+        lg            : 16px
 	),
 	text--quote: (
 		sm            : 16px,
@@ -107,14 +107,14 @@ $fontsizes: (
 		lg            : 24px
 	),
 	text: (
-		sm            : 19px,
-		rg            : 24px,
-		lg            : 27px
+		sm            : 17px,
+		rg            : 21px,
+		lg            : 24px
 	),
 	text--plus: (
-		sm            : 20px,
-		rg            : 25px,
-		lg            : 28px
+		sm            : 18px,
+		rg            : 22px,
+		lg            : 25px
 	),
 	text--lg: (
         sm            : 27px,

@@ -11,32 +11,6 @@
 // See: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
 // --------------------------------------------------------------------------
 
-//a.Post--inList {
-//	@include complexLink();
-//	@include o-aligner;
-//	border: 0;
-//	margin-bottom: $blockSpace / 3;
-//	position: relative;
-//
-//	+ .Post--inList {
-//		// margin-top: space(3.25);
-//		margin-top: $blockSpace / 2;
-//	}
-//
-//	> .Post-aligner {
-//		@include o-aligner-item;
-//	}
-//
-//	@include on-event() {
-//		.o-coverImage,
-//		.Post-image,
-//		.Post-coverImage {
-//			@include baseTransition();
-//			opacity: 0.5;
-//		}
-//	}
-//}
-
 .Post + .Post {
     margin-top: $blockSpace;
 }
@@ -123,7 +97,26 @@
 	@include reverseTextBlock();
 }
 
+
+
+// Markdown scope
+// --------------------------------------------------------------------------
+
 .Post-content {
+
+    figure {
+        margin: space(1.5);
+        //width: calc(100% - #{space(0.75)});
+
+        @include media-breakpoint-up(sm) {
+            margin: space(3);
+            //width: calc(100% - #{space(1.5)});
+        }
+    }
+
+    img {
+        border: 1px solid palette(base);
+    }
 }
 
 

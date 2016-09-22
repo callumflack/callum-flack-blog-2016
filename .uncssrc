@@ -15,6 +15,7 @@
         ".FlexEmbed-ratio--4by3",
         ".Post-content a",
         ".Post-content figure",
+        ".Post-content img",
         ".Post-content blockquote p",
         ".Post-meta > a"
 	]
