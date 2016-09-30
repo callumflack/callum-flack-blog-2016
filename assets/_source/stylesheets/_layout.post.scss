@@ -27,11 +27,6 @@
         @include media-breakpoint-up(md) { margin: $paragraphSpace * 1.75; }
     }
 
-    img {
-        border: 1px solid palette(base);
-    }
-
-
     blockquote p {
         background-color: rgba( palette(neutral), 0.7);
         //border-left: 1px solid palette(text);
@@ -57,7 +52,19 @@
 }
 
 .Post-image {
-	margin-bottom: space(1);
+    text-align: center;
+
+    img {
+        border: 1px solid palette(base);
+        width: 100%;
+    }
+
+    &--small {
+        img {
+            //@include media-breakpoint-up(sm) { width: 80%; }
+            //@include media-breakpoint-up(md) { width: 60%; }
+        }
+    }
 }
 
 .Post-meta {

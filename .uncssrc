@@ -16,6 +16,8 @@
         ".Post-content a",
         ".Post-content figure",
         ".Post-content img",
+        ".Post-image img",
+        ".Post-image.Post-image--small img",
         ".Post-content blockquote p",
         ".Post-meta > a"
 	]
