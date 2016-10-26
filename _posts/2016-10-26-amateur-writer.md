@@ -12,7 +12,7 @@ Hi screen, this blog is vague. [It's not for SEO.](http://wazayak.com/archives/2
 
 So I almost canned this thing, better things to do and all.
 
-My biggest design inspiration in the past half decade has been gov.uk's [Design Principles](https://www.gov.uk/design-principles). Look at that typography! Look at the information hierarchy. Beautiful. And so damn useful; it's my go-to digital product design shortcourse. And yes, being a collector-type, I can spot that same [Margaret Calvert font](https://en.wikipedia.org/wiki/Transport_(typeface)#/media/File:Road.sign.arp.750pix.jpg) here on the warning signs along the Cairns beaches. Thus, alongside gov.uk sits the webblogs of [Ben Terrett](http://noisydecentgraphics.typepad.com/) and Russell Davies and genmon's [Interconnected](http://interconnected.org/home/) from which I've been silently feeding for years.
+My biggest design inspiration in the past half decade has been gov.uk's [Design Principles](https://www.gov.uk/design-principles). Look at that typography! Look at the information hierarchy. Beautiful. And so damn useful; it's my go-to digital product design shortcourse. And yes, being a collector-type, I can spot that same [Margaret Calvert font](https://en.wikipedia.org/wiki/Transport_(typeface)#/media/File:Road.sign.arp.750pix.jpg) here on the warning signs along the Cairns beaches. Alongside gov.uk perusals sit the webblogs of [Ben Terrett](http://noisydecentgraphics.typepad.com/) and Russell Davies and genmon's [Interconnected](http://interconnected.org/home/) from which I've been silently feeding for years.
 
 Let me get to the point. [This morning's post by Mr. Davies](http://russelldavies.typepad.com/planning/2016/10/amateurs-and-experts.html) contained this:
 
@@ -20,6 +20,6 @@ Let me get to the point. [This morning's post by Mr. Davies](http://russelldavie
 
 Which was a comment from a post titled ["Reading and writing for our peers".](https://blog.jonudell.net/2016/10/23/reading-and-writing-for-our-peers/) by Jon Udell.
 
-It's a comment I absolutely agree with. Just as I've found the most interesting music is mostly by unknown, so-called "amateurs" that made all the Black American Soul discs [that drive me nuts](https://sites.google.com/site/coloronetear/), or that most Victorian-era scientific breakthroughs were made by amateur Clergymen.
+It's a comment I very much agree with. Just as I've found the most interesting music is mostly by unknown, so-called "amateurs", like the Black American Soul discs [that drive me nuts](https://sites.google.com/site/coloronetear/), or that most Victorian-era scientific breakthroughs were made by amateur Clergymen.
 
-So, thank you Mr. Davies and Mr. Udell. And thank you to all those blog articles I keep reading. Here's to being ignorant, refusing SEO optimisation, self-publishing on Jekyll and finding peers. Or at least a mirror.
+So, thank you Mr. Davies and Mr. Udell. And thank you to all those bloggers I keep reading. Here's to being ignorant, refusing SEO optimisation, self-publishing on Jekyll and finding peers. Or at least a mirror.
