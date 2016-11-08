@@ -18,8 +18,8 @@ Let me get to the point. [This morning's post by Mr. Davies](http://russelldavie
 
 > "I much prefer reading amateur writers writing about the field in which they're experts, rather than expert writers writing about fields in which they're amateurs."
 
-Which was a comment from a post titled ["Reading and writing for our peers".](https://blog.jonudell.net/2016/10/23/reading-and-writing-for-our-peers/) by Jon Udell.
+Which was a comment from a post titled ["Reading and writing for our peers"](https://blog.jonudell.net/2016/10/23/reading-and-writing-for-our-peers/) by Jon Udell.
 
-I agree. So I thought I'd sit here and tell you that, Screen. Just as I've found the most interesting music is mostly by unknown, so-called "amateurs", like the Black American Soul discs [that drive me nuts](https://sites.google.com/site/coloronetear/), I feel I'm compelled to keep doing this, dear Screen.
+I agree. So I thought I'd sit here and tell you that, Screen. Just as I've found the most interesting music is mostly by unknown, so-called "amateurs", like the Black American Soul discs [that drive me nuts](https://sites.google.com/site/coloronetear/), I feel I'm compelled to keep doing this amateur thing, dear Screen.
 
-So, thank you Mr. Davies and Mr. Udell. And thank you to all who still blog. Here's to being ignorant, taking the long way, refusing SEO optimisation, self-publishing, and finding peers. Or at least a mirror.
+So, thanks Mr. Davies and Mr. Udell, please keep posting. As for me, here's to being ignorant, taking the long way, refusing SEO optimisation, self-publishing with Jekyll, and finding peers. Or at least a mirror.
