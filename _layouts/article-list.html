@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="c-content" aria-label="Content">
+
+    <div class="o-container">
+        {% for post in site.posts %}
+            {% include post.html %}
+        {% endfor %}
+    </div>
+
+</main>

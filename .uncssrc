@@ -19,6 +19,10 @@
         ".Post-image img",
         ".Post-image.Post-image--small img",
         ".Post-content blockquote p",
-        ".Post-meta > a"
+        ".Post-meta > a",
+        ".c-profile p a",
+        ".now .c-profile-header .o-coverImage",
+		"ol",
+		"ul"
 	]
 }

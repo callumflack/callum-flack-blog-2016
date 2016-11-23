@@ -1,0 +1,99 @@
+
+
+// --------------------------------------------------------------------------
+//   FLAG LAYOUT for a general 'about me' page
+// --------------------------------------------------------------------------
+
+
+.c-profile {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100vh;
+    }
+
+    p a { @include underlineLink(); }
+}
+
+@mixin flexChild() {
+    flex-grow: 1;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.c-profile-header,
+.c-profile-content {
+    @include media-breakpoint-up(md) { @include flexChild(); }
+}
+
+.c-profile-header {
+    height: 50vh;
+
+    @include media-breakpoint-up(md) { width: calc(100% * 1/2); height: auto; }
+    @include media-breakpoint-up(lg) { width: calc(100% * 3/5); }
+    @include media-breakpoint-up(su) { width: calc(100% * 2/3); }
+
+    .o-coverImage {
+        @include media-breakpoint-up(sm) { background-position-x: 80%; }
+        @include media-breakpoint-up(lg) { background-position-x: 70%; }
+    }
+}
+
+.c-profile-content {
+    margin: space(1) 0 space(3);
+    overflow-y: scroll;
+
+    @include media-breakpoint-up(md) { width: calc(100% * 1/2); margin: space(1.5) 0 0; }
+    @include media-breakpoint-up(lg) { width: calc(100% * 2/5); }
+    @include media-breakpoint-up(su) { width: calc(100% * 1/3); }
+}
+
+
+
+.c-profile-title {
+    @include verticalRhythm();
+    //margin-top: space(1);
+    //@include media-breakpoint-up(md) { display: none; }
+
+    h1,
+    p {
+        @include textRg();
+    }
+
+    p {
+        color: palette(medium);
+    }
+
+    @include when-inside(".home") {
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            left: space(1.5);
+            top: space(1);
+        }
+    }
+}
+
+
+// home vars
+.home {
+    position: relative;
+}
+
+
+// Now vars
+
+.now .c-profile-header .o-coverImage {
+    @include media-breakpoint-up(sm) { background-position-x: 12%; }
+    @include media-breakpoint-up(lg) { background-position-x: 12%; }
+}
+
+
+// utilities
+
+.u-sm-hide {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}

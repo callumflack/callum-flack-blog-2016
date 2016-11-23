@@ -35,7 +35,7 @@
 @import "object.cursor";
 @import "object.list";
 @import "object.link";
-//@import "object.aligner";
+@import "object.aligner";
 //@import "object.icon";
 //@import "object.rule";
 //@import "object.media";
@@ -53,8 +53,9 @@
 //@import "component.loadanimations";
 
 @import "layout.body";
-@import "layout.header";
-@import "layout.post";
+@import "layout.flag";
+//@import "layout.header";
+//@import "layout.post";
 //@import "layout.blocks";
 //@import "layout.footer";
 //@import "layout.trumps";

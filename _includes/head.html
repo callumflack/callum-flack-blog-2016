@@ -4,10 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% seo title=false %}
-    <title>{% if page.url != '/' %}{{ page.title }} {% endif %}*{{ site.title }}</title>
+    <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author", content="Callum Flack" >
-    <meta name="handheldfriendly", content="true" >
-    <meta name="mobileoptimized", content="320" >
 
     {% comment %}
     {% include lazysize-scripts.html %}

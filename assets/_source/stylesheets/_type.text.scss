@@ -49,7 +49,7 @@
 	@include textTemplate(
 		$mixinSize: text--sm,
 		$mixinLetterSpacing: 0.02em,
-        $mixinLineHeight: 1.6 
+        $mixinLineHeight: 1.6
 	);
 }
 
@@ -69,7 +69,7 @@
 
 .c-text--sm       { @include textSm(); }
 .c-text           { @include textRg(); }
-.c-text--medium   { @include textRg(); color: palette(medium); }
+.c-text--medium   { @include textRg(); color: palette(medium) !important; }
 .c-text--intro    { @include textRg(); color: palette(medium); margin-bottom: space(0.5); }
 .c-text--lg       { @include textLg(); margin-bottom: 0; > strong { font-family: $font-text-extrabold; text-transform: initial; } }
 

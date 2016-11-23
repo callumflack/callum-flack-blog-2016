@@ -1,15 +1,39 @@
 ---
 layout: default
+title: home
+words: |
+    Owner of [Patternworks](http://patternworks.com.au), making better digital brands and services. 15 years as brand designer in London, Melbourne, Brisbane & Sydney. Web developer for the last 7 years. Amateur musicologist. Following tangents. Maintaining wonder.
+
+    See what I'm doing [now](/now.html).
 ---
 
-{% include header.html %} 
 
-<main class="c-content" aria-label="Content">
+<div class="c-profile">
 
-    <div class="o-container">
-        {% for post in site.posts %}
-            {% include post.html %}
-        {% endfor %}
-    </div>
+    <header class="c-profile-header" role="banner">
+        <div class="o-coverImage" style="background-image: url('/assets/images/callum.jpg');">
+        </div>
+    </header>
 
-</main>
+    <main class="c-profile-content" aria-label="Content">
+
+        <div class="o-aligner">
+            <div class="o-aligner-item">
+                <div class="o-container o-container--super">
+                    <div class="c-profile-title">
+                        <h1>Callum Flack</h1>
+                        <p>Cairns, Australia</p>
+                    </div>
+
+                    {{ page.words | markdownify }}
+
+                    <div class="sharingButtonWrapper">
+                        {% include sharingbuttons.html %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>

@@ -7,48 +7,42 @@
 
 # Site settings
 # SEO setup done using https://github.com/jekyll/jekyll-seo-tag
-title: Callum Flack is…
+title: Callum Flack
 author:
-    twitter: callumflack
+  twitter: callumflack
 description: |
   CALLUM FLACK is a husband, dad, web designer and amateur musicologist. He also runs a digital studio called Patternworks. On here you’ll find working-in-public notes, marginalia, tangents and other things inbetween.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://callumflack.com" # the base hostname & protocol for your site
 assetsurl: "/assets/images/"
 social:
-    instagram: https://instagram.com/callumflack
+  instagram: https://instagram.com/callumflack
 twitter:
-    username: callumflack
+  username: callumflack
 logo: "/assets/images/logo.png"
 google-analytics: UA-43323845-1
 
 # Defaults
 defaults:
-    -
-        scope:
-            path: ""
-            type: posts
-        values:
-            permalink: "/:categories/:title.html"
-            layout: article
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/:categories/:title.html"
+      layout: article
 
 # Collections
 collections:
-    posts:
-        title: Posts
-        output: true
+  posts:
+    title: Posts
+    output: true
 
 # Markdown settings
 markdown: kramdown
 kramdown:
-    input: GFM
-    syntax_highlighter: rouge
-
-# Sass settings
-# sass:
-#   add_charset: true
-#   sass_dir: assets/sass
-#   style: :compressed
+  input: GFM
+  syntax_highlighter: rouge
 
 # Build settings
 exclude:

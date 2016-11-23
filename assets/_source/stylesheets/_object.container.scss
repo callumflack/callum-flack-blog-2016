@@ -13,7 +13,7 @@
 	margin: 0 auto;
 	max-width: $width;
 	padding: 0 space(1.5);
-	position: relative;
+	//position: relative;
 
     // manage end spacing
 	p,
@@ -50,13 +50,8 @@
 	}
 
 	&--hero {
-        @include media-breakpoint-up(sm) {
-            padding: 0 space(4);
-        }
-
-        @include media-breakpoint-up(lg) {
-            padding: 0 space(2);
-        }
+        @include media-breakpoint-up(sm) { padding: 0 space(4); }
+        @include media-breakpoint-up(lg) { padding: 0 space(2); }
 	}
 
     &--super {
@@ -64,8 +59,6 @@
 		max-width: 100%;
 		padding: 0 space(1.5);
 
-        @include media-breakpoint-up(sm) {
-            padding: 0 space(4);
-        }
+        @include media-breakpoint-up(lg) { padding: 0 space(4); }
 	}
 }

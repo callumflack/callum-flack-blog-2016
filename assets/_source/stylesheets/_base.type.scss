@@ -41,12 +41,18 @@ html {
 // Consistent vertical rhythm
 // --------------------------------------------------------------------------
 
+@mixin verticalRhythm() {
+	margin-bottom: $paragraphSpace * 0.5;
+	@include media-breakpoint-up(sm) { margin-bottom: $paragraphSpace; }
+}
+
 /* uncss:ignore */
 // h1, h2, h3, h4, h5, h6,
 ul, ol, li, dl,
 blockquote, p, address,
 table, time,
 fieldset,
-pre {
-	margin-bottom: $paragraphSpace;
+pre,
+.u-verticalRhythm {
+    @include verticalRhythm();
 }
