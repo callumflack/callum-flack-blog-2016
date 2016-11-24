@@ -33,6 +33,9 @@
 	position: fixed;
 }
 
+
+
+
 @mixin o-posCenter(
 	$posCenterPosition: absolute
 ) {
@@ -47,7 +50,7 @@
 ) {
 	bottom: 0;
 	left: 0;
-	margin: auto;
+	//margin: auto;
 	position: $posFullScreen;
 	right: 0;
 	top: 0;

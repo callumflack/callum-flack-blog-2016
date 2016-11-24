@@ -11,7 +11,7 @@ words: |
 <div class="c-profile">
 
     <header class="c-profile-header" role="banner">
-        <div class="o-coverImage" style="background-image: url('/assets/images/callum.jpg');">
+        <div class="c-profile-image" style="background-image: url('/assets/images/callum.jpg');">
         </div>
     </header>
 
@@ -20,20 +20,23 @@ words: |
         <div class="o-aligner">
             <div class="o-aligner-item">
                 <div class="o-container o-container--super">
-                    <div class="c-profile-title">
-                        <h1>Callum Flack</h1>
-                        <p>Cairns, Australia</p>
-                    </div>
+                    <div class="c-profile-contentSpacer">
 
-                    {{ page.words | markdownify }}
+                        <div class="c-profile-title">
+                            <h1>Callum Flack</h1>
+                            <p>Cairns, Australia</p>
+                        </div>
 
-                    <div class="sharingButtonWrapper">
-                        {% include sharingbuttons.html %}
+                        {{ page.words | markdownify }}
+
+                        <div class="sharingButtonWrapper">
+                            {% include sharingbuttons.html %}
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
-
+        
     </main>
 </div>
