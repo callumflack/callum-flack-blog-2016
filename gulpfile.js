@@ -172,9 +172,7 @@ gulp.task( 'minify:css', function () {
 		.pipe( plugins.plumber() )
 		.pipe( plugins.uncss ( {
 			html: [
-				'_includes/*.html',
-				'_layouts/*.html',
-				'*.html'
+				'_site/*.html'
 			],
 			uncssrc: '.uncssrc'
 		} ) )
